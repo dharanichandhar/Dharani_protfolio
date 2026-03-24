@@ -21,7 +21,6 @@ export default function Hero() {
             </h1>
             <h2 className="hero-subtitle">
               <span className="typed-text">{typedText}</span>
-              <span className="cursor-blink">|</span>
             </h2>
             <p className="hero-description">{personalInfo.description}</p>
             <div className="hero-buttons">
