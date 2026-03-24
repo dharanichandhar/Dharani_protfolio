@@ -1,0 +1,351 @@
+.contact {
+  background: var(--bg-secondary);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 107, 0, 0.1);
+  border-radius: 12px;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+}
+
+.contact-value {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+a.contact-value:hover {
+  color: var(--accent-primary);
+}
+
+.contact-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.contact-social:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 107, 0, 0.2);
+}
+
+.contact-form {
+  padding: 40px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--glass-border);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: var(--accent-primary);
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+  top: -10px;
+  font-size: 0.85rem;
+  color: var(--accent-primary);
+}
+
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group input:focus ~ .form-line,
+.form-group textarea:focus ~ .form-line {
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-buttons .btn {
+  flex: 1;
+  justify-content: center;
+  min-width: 150px;
+}
+
+.notification {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  z-index: 10000;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.notification.success {
+  background: linear-gradient(135deg, #ff6b00, #ffd700);
+  color: #0a0a0f;
+}
+
+.notification.error {
+  background: #ff4444;
+  color: #fff;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-info {
+    text-align: left;
+    padding: 0;
+  }
+
+  .contact-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .contact-info > p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .contact-details {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .contact-item {
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  .contact-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact-label {
+    font-size: 0.65rem;
+    margin-bottom: 1px;
+  }
+
+  .contact-value {
+    font-size: 0.85rem;
+  }
+
+  .contact-socials {
+    gap: 8px;
+  }
+
+  .contact-social {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+  }
+
+  .contact-form {
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--bg-primary);
+    border: 1.5px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--accent-primary);
+    background: var(--bg-primary);
+  }
+
+  .form-group textarea {
+    min-height: 90px;
+    max-height: 150px;
+    resize: vertical;
+  }
+
+  .form-line {
+    display: none;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .form-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 8px;
+  }
+
+  .form-buttons .btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(255, 107, 0, 0.3);
+  }
+}

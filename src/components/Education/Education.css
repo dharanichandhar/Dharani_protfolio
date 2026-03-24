@@ -1,0 +1,362 @@
+.education {
+  background: var(--bg-secondary);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary));
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: calc(50% + 50px);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: calc(50% + 50px);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-gradient);
+  border: 4px solid var(--bg-primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 0 20px var(--glow-primary);
+}
+
+.marker-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  animation: pulse 2s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+.timeline-card {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 25px 30px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 4px 0 0 4px;
+}
+
+.card-accent-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 4px 0 0 4px;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 20px 50px rgba(255, 107, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(255, 107, 0, 0.1);
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.type-badge.education {
+  background: rgba(100, 200, 255, 0.15);
+  color: #64c8ff;
+  border: 1px solid rgba(100, 200, 255, 0.3);
+}
+
+.type-badge.experience {
+  background: rgba(255, 200, 100, 0.15);
+  color: #ffc864;
+  border: 1px solid rgba(255, 200, 100, 0.3);
+}
+
+.type-badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+.timeline-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.timeline-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+}
+
+.timeline-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (min-width: 769px) {
+  .timeline-card {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .timeline-item {
+    padding-left: 50px;
+    padding-right: 0;
+    justify-content: flex-start;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-marker {
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    top: 25px;
+  }
+
+  .timeline-card {
+    padding: 20px 25px;
+    min-height: 250px;
+  }
+
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 30px 0;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+    padding-right: 0;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .timeline-marker {
+    left: 20px;
+    top: 25px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+    border-radius: 12px;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 12px;
+  }
+
+  .timeline-title {
+    font-size: 1.15rem;
+  }
+
+  .timeline-company {
+    font-size: 0.95rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .type-badge {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding: 20px 0;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .timeline-item:nth-child(even) {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+
+  .timeline-line {
+    left: 12px;
+    width: 2px;
+  }
+
+  .timeline-marker {
+    left: 12px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    border-width: 3px;
+  }
+
+  .timeline-card {
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  .card-accent-bar {
+    width: 3px;
+  }
+
+  .timeline-date {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+
+  .timeline-title {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+
+  .timeline-company {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .timeline-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .type-badge {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  .type-badge svg {
+    width: 14px;
+    height: 14px;
+  }
+}
