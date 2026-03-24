@@ -13,9 +13,10 @@ export default function Navbar() {
           <span className="logo-text">DHARANI</span>
         </a>
         <button
-          className="nav-toggle"
+          className={`nav-toggle ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle navigation"
+          aria-expanded={isMobileMenuOpen}
         >
           <span></span>
           <span></span>
