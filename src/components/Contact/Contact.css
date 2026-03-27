@@ -230,7 +230,12 @@ a.contact-value:hover {
     gap: 32px;
   }
 
+  .contact-info {
+    order: 1;
+  }
+
   .contact-form {
+    order: 2;
     padding: 30px;
   }
 }
@@ -242,15 +247,14 @@ a.contact-value:hover {
   }
 
   .contact-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 24px;
     align-items: stretch;
   }
 
-  /* top content */
   .contact-info {
-    order: 1;
+    order: 1 !important;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -262,7 +266,7 @@ a.contact-value:hover {
 
   .contact-info h3 {
     font-size: 1.7rem;
-    line-height: 1.2;
+    line-height: 1.25;
     margin-bottom: 12px;
   }
 
@@ -272,7 +276,6 @@ a.contact-value:hover {
     margin-bottom: 18px;
   }
 
-  /* individual contact cards */
   .contact-details {
     display: flex;
     flex-direction: column;
@@ -289,13 +292,6 @@ a.contact-value:hover {
     border: 1px solid var(--glass-border);
     border-radius: 14px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-  }
-
-  .contact-item:hover {
-    border-color: var(--accent-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(255, 107, 0, 0.12);
   }
 
   .contact-icon {
@@ -335,9 +331,8 @@ a.contact-value:hover {
     border-width: 1px;
   }
 
-  /* bottom full-width communication card */
   .contact-form {
-    order: 2;
+    order: 2 !important;
     width: 100%;
     padding: 22px 16px;
     margin: 0;
@@ -349,6 +344,7 @@ a.contact-value:hover {
 
   .form-group {
     margin-bottom: 16px;
+    position: relative;
   }
 
   .form-group label {
@@ -369,6 +365,7 @@ a.contact-value:hover {
     background: var(--bg-primary);
     border: 1.5px solid var(--glass-border);
     border-radius: 12px;
+    border-bottom: 1.5px solid var(--glass-border);
     font-size: 15px;
     box-sizing: border-box;
     color: var(--text-primary);
