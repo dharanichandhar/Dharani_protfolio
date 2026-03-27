@@ -1,0 +1,17 @@
+[
+  { "name": "HTML", "logo": "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+  { "name": "CSS", "logo": "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+  { "name": "JavaScript", "logo": "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" },
+  { "name": "Java", "logo": "https://cdn.worldvectorlogo.com/logos/java.svg" },
+  { "name": "React.js", "logo": "https://cdn.worldvectorlogo.com/logos/react-1.svg" },
+  { "name": "Node.js", "logo": "https://cdn.worldvectorlogo.com/logos/nodejs.svg" },
+  { "name": "Express.js", "logo": "https://cdn.worldvectorlogo.com/logos/express-109.svg" },
+  { "name": "MongoDB", "logo": "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" },
+  { "name": "MySQL", "logo": "https://www.mysql.com/common/logos/powered-by-mysql-125x64.png" },
+  { "name": "Python", "logo": "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+  { "name": "Postman", "logo": "https://cdn.worldvectorlogo.com/logos/postman.svg" },
+  { "name": "Perplexity", "logo": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Perplexity_AI_logo.svg" },
+  { "name": "Lovable", "logo": "https://cdn.worldvectorlogo.com/logos/lovable.svg" },
+  { "name": "OpenCode", "logo": "https://opencode.ai/favicon.ico" },
+  { "name": "Cursor AI", "logo": "https://cursor.com/favicon.ico" }
+]

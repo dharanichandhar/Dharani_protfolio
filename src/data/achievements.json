@@ -1,0 +1,38 @@
+[
+  {
+    "title": "AWS Solutions Architect",
+    "organization": "Amazon Web Services",
+    "year": "2024",
+    "icon": "medal"
+  },
+  {
+    "title": "Google Cloud Professional",
+    "organization": "Google Cloud Platform",
+    "year": "2024",
+    "icon": "star"
+  },
+  {
+    "title": "Hackathon Winner",
+    "organization": "Tech Innovation Summit 2024",
+    "year": "2024",
+    "icon": "lightning"
+  },
+  {
+    "title": "React Developer Certification",
+    "organization": "Meta (Facebook)",
+    "year": "2023",
+    "icon": "check"
+  },
+  {
+    "title": "Python for Data Science",
+    "organization": "IBM Professional Certificate",
+    "year": "2023",
+    "icon": "layers"
+  },
+  {
+    "title": "Node.js Backend Master",
+    "organization": "OpenClassrooms",
+    "year": "2023",
+    "icon": "grid"
+  }
+]

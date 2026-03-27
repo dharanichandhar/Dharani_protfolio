@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Trendy Thread",
+    "description": "A stylish fashion website built to explore and search clothing collections easily. It provides a simple and attractive interface for users to browse trendy outfits and discover fashion items quickly.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "/assets/Trendy_Thread.png",
+    "demoLink": "https://dharanichandhar.github.io/TrendyThread/",
+    "codeLink": "https://github.com/dharanichandhar/TrendyThread.git"
+  },
+  {
+    "title": "Simple Login Page",
+    "description": "A basic web application designed with a clean login interface and student feedback functionality. It helps users submit and manage feedback in a simple and user-friendly way.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "/assets/Simple_login_page.png",
+    "demoLink": "https://dharanichandhar.github.io/login-page/",
+    "codeLink": "https://github.com/dharanichandhar/login-page.git"
+  },
+  {
+    "title": "Tic Tac Toe Game",
+    "description": "An interactive Tic Tac Toe game developed using React. It allows users to play the classic game with a smooth interface and dynamic game updates.",
+    "tags": ["React", "CSS", "JavaScript"],
+    "image": "/assets/Tic Tac Toe Game.png",
+    "demoLink": "https://tic-tac-toe-react-lovat-five.vercel.app/",
+    "codeLink": "https://github.com/dharanichandhar/Tic-Tac-Toe-React.git"
+  },
+  {
+    "title": "Insta Clone",
+    "description": "A desktop-view Instagram clone built with React that recreates the look and feel of the Instagram interface. It focuses on UI design and basic social media layout experience.",
+    "tags": ["React", "JavaScript", "CSS"],
+    "image": "/assets/Insta Clone.png",
+    "demoLink": "https://insta-clone-react-delta.vercel.app/",
+    "codeLink": "https://github.com/dharanichandhar/insta-clone-react.git"
+  },
+  {
+    "title": "Flower Shop",
+    "description": "An online flower and garlands purchasing platform where users can browse products and place orders. It is built as a full stack application with both frontend and backend integration.",
+    "tags": ["React", "Node.js", "MongoDB"],
+    "image": "/assets/Flower Shop.png",
+    "demoLink": "https://flowrshop.vercel.app/login",
+    "codeLink": "https://github.com/dharanichandhar/Flowrshop-MERN.git"
+  }
+]
