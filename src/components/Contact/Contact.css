@@ -251,6 +251,7 @@ a.contact-value:hover {
     flex-direction: column !important;
     gap: 24px;
     align-items: stretch;
+     padding-left: 1%;
   }
 
   .contact-info {
@@ -262,6 +263,7 @@ a.contact-value:hover {
     background: transparent;
     border: none;
     box-shadow: none;
+   
   }
 
   .contact-info h3 {
@@ -281,6 +283,8 @@ a.contact-value:hover {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 18px;
+    
+    
   }
 
   .contact-item {
@@ -292,6 +296,7 @@ a.contact-value:hover {
     border: 1px solid var(--glass-border);
     border-radius: 14px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+    padding-left: 2%;
   }
 
   .contact-icon {
@@ -300,16 +305,21 @@ a.contact-value:hover {
     background: rgba(255, 107, 0, 0.12);
     border-radius: 12px;
     flex-shrink: 0;
+    margin-left: 2%;
+   
   }
 
   .contact-icon svg {
     width: 20px;
     height: 20px;
+    
+    
   }
 
   .contact-label {
     font-size: 0.72rem;
     margin-bottom: 3px;
+    
   }
 
   .contact-value {
@@ -329,6 +339,7 @@ a.contact-value:hover {
     height: 42px;
     border-radius: 10px;
     border-width: 1px;
+    margin-left: 1%;
   }
 
   .contact-form {
@@ -340,6 +351,8 @@ a.contact-value:hover {
     border: 1px solid var(--glass-border);
     border-radius: 18px;
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+   
+    
   }
 
   .form-group {
@@ -356,6 +369,7 @@ a.contact-value:hover {
     color: var(--text-secondary);
     pointer-events: auto;
     transform: none;
+    margin-left: 2%;
   }
 
   .form-group input,
